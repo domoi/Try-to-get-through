@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DD0CB65B-9623-B864-3F1B-1845618950FC}</ProjectGuid>
+    <ProjectGuid>{A2B3B4AA-A9D2-E17B-4CED-44E34BF276EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -72,12 +72,12 @@
     <Compile Include="Assets\script\down.cs" />
     <Compile Include="Assets\script\Shop.cs" />
     <Compile Include="Assets\script\NextLevel.cs" />
+    <Compile Include="Assets\script\ExitLevel1.cs" />
     <Compile Include="Assets\script\Coins.cs" />
     <Compile Include="Assets\script\Danger.cs" />
     <Compile Include="Assets\script\PlayerPos.cs" />
     <Compile Include="Assets\script\menu.cs" />
     <Compile Include="Assets\script\LevelController.cs" />
-    <Compile Include="Assets\script\ExitLevel1.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
