@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 5f;
     private bool faceRight = true;
 
-    public GameObject Die1;
-
     public GameMaster gm;
 
 
@@ -37,7 +35,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRaius, whatIsGround);
 
         float movement = Input.GetAxis("Horizontal");
