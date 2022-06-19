@@ -55,7 +55,6 @@
   <ItemGroup>
     <Compile Include="Assets\script\CoinText.cs" />
     <Compile Include="Assets\script\Checkpoint.cs" />
-    <Compile Include="Assets\script\HitBox.cs" />
     <Compile Include="Assets\script\Sticky.cs" />
     <Compile Include="Assets\script\Select.cs" />
     <Compile Include="Assets\script\CameraController.cs" />
@@ -65,19 +64,18 @@
     <Compile Include="Assets\script\Ladder.cs" />
     <Compile Include="Assets\script\MainMenu.cs" />
     <Compile Include="Assets\script\Enemy.cs" />
-    <Compile Include="Assets\script\kill.cs" />
     <Compile Include="Assets\script\Pause_menu.cs" />
     <Compile Include="Assets\script\GameMaster.cs" />
     <Compile Include="Assets\script\choice.cs" />
     <Compile Include="Assets\script\down.cs" />
     <Compile Include="Assets\script\Shop.cs" />
     <Compile Include="Assets\script\NextLevel.cs" />
-    <Compile Include="Assets\script\ExitLevel1.cs" />
+    <Compile Include="Assets\script\LevelController.cs" />
     <Compile Include="Assets\script\Coins.cs" />
     <Compile Include="Assets\script\Danger.cs" />
     <Compile Include="Assets\script\PlayerPos.cs" />
     <Compile Include="Assets\script\menu.cs" />
-    <Compile Include="Assets\script\LevelController.cs" />
+    <Compile Include="Assets\script\CameraController2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

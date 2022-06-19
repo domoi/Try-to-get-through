@@ -6,30 +6,35 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public Button level2B;
-    public Button level3B;
+    public Button level2b;
+    public Button level3b;
     int levelComplete;
 
-    void Start()
+    private void Start()
     {
         levelComplete = PlayerPrefs.GetInt("LevelComplete");
-        level2B.interactable = false;
-        level3B.interactable = false;
+        level2b.interactable = false;
+        level3b.interactable = false;
+
         switch (levelComplete)
         {
-            case 1:
-                level2B.interactable = true;
-                break;
             case 2:
-                level2B.interactable = true;
-                level3B.interactable = true;
+                level2b.interactable = true;
                 break;
-
+            case 3:
+                level2b.interactable = true;
+                level3b.interactable = true;
+                break;
         }
     }
-
     public void LoadTo(int level)
     {
         SceneManager.LoadScene(level);
+    }
+    public void Reset()
+    {
+        level2b.interactable = false;
+        level3b.interactable = false;
+        PlayerPrefs.DeleteAll();
     }
 }

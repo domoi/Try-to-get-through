@@ -12,7 +12,7 @@ public class LevelController : MonoBehaviour
 
     void Start()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -20,12 +20,12 @@ public class LevelController : MonoBehaviour
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
         levelComplete = PlayerPrefs.GetInt("LevelComplete");
     }
-
     public void isEndGame()
     {
-        if(sceneIndex == 3)
+        if( sceneIndex == 4)
         {
             Invoke("LoadMainMenu", 1f);
+            
         }
         else
         {
@@ -40,8 +40,9 @@ public class LevelController : MonoBehaviour
     {
         SceneManager.LoadScene(sceneIndex + 1);
     }
+
     void LoadMainMenu()
     {
-        SceneManager.LoadScene("MainMennu");
+        SceneManager.LoadScene("MainMenu");
     }
 }
