@@ -10,11 +10,16 @@ public class MainMenu : MonoBehaviour
     public Button level3b;
     int levelComplete;
 
+
+    private GameMaster gm;
+
+
     private void Start()
     {
         levelComplete = PlayerPrefs.GetInt("LevelComplete");
         level2b.interactable = false;
         level3b.interactable = false;
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
 
         switch (levelComplete)
         {
@@ -30,6 +35,8 @@ public class MainMenu : MonoBehaviour
     public void LoadTo(int level)
     {
         SceneManager.LoadScene(level);
+        gm.lastCheckPoint = new Vector2(0, 0);
+
     }
     public void Reset()
     {
